@@ -33,9 +33,6 @@ RUN chmod 777 /bot
 COPY . .
 RUN chmod +x g && chmod +x db.sh
 
-# Copies config(if it exists)
-COPY . .
-
 # Install requirements and start the bot
 RUN npm install
 CMD ["node", "server"]
